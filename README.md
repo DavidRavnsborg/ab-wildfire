@@ -9,7 +9,7 @@
 Additionally, 217 wildfire perimeter issues were detected in the categorization of the BURNCODEs, using spatial intersections. 168 of these issues are due to wildfire perimeters that straddle the province's border. These issues have not been modified in the visualization, but the ab-wildfire-perimeters-burncode-correction.py script is a good starting point for fixing these identified issues. NOTE: 
 - B, PB, I, B_NP, PB_NP, and I_NP BURNCODEs were all considered to be within the province for this analysis. Other burncodes for Northwest Territories, Saskatchewan, British Columbia, and Montana are considered to be outside the province.
 - Some portion of these 168 wildfire perimeters that straddle the border may be considered minor overlaps that are insignificant (additional validation is required). 
-- The remaining 49 issues are forest fire perimeters that cleanly fall on the wrong side of the Alberta border, for which they are labeled. These should be validated, but should be clearer.
+- The remaining 49 issues are forest fire perimeters that cleanly fall on the wrong side of the Alberta border, for which they are labeled. These should be validated, but should be more straight-forward to evaluate.
 
 ![alt text](ab_wildfires_1931-2019.png)
 
