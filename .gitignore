@@ -1,0 +1,16 @@
+# Shapefile files
+*.cpg
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.shp
+*.shx
+*.xml
+
+# Docs
+*.html
+*.pdf
+
+# Scratchpad
+*.ipynb
