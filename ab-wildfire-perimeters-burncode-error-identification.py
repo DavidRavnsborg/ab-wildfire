@@ -1,7 +1,5 @@
 import geopandas as gpd
 import pandas as pd
-from shapely.geometry import Point
-
 
 wildfire_perimeters_path = "WildfirePerimeters1931to2022.shp"
 wildfire_perimeters = gpd.read_file(wildfire_perimeters_path)
