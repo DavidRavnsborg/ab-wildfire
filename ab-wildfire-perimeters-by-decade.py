@@ -6,7 +6,7 @@ import numpy as np
 
 wildfire_perimeters_path = "WildfirePerimeters1931to2022.shp"
 wildfire_perimeters = gpd.read_file(wildfire_perimeters_path)
-wildfire_perimeters = wildfire_perimeters.to_crs(epsg=4326)
+wildfire_perimeters = wildfire_perimeters.to_crs(epsg=3400)
 burn_codes_to_exclude = ["I", "I_NP", "I_NWT", "I_SA", "I_BC", "I_MO"]
 wildfire_perimeters_filtered = wildfire_perimeters[
     ~wildfire_perimeters["BURNCODE"].isin(burn_codes_to_exclude)
@@ -17,7 +17,7 @@ canada_provincial_perimeters = gpd.read_file(canada_provincial_perimeter_path)
 alberta_perimeter = canada_provincial_perimeters[
     canada_provincial_perimeters["PRNAME"] == "Alberta"
 ]
-alberta_perimeter = alberta_perimeter.to_crs(epsg=4326)
+alberta_perimeter = alberta_perimeter.to_crs(epsg=3400)
 
 # Define a color map for wildfire_perimeter's `BURNCODE`
 color_map = {

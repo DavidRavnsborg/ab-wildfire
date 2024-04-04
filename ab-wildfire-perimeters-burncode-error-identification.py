@@ -3,7 +3,7 @@ import pandas as pd
 
 wildfire_perimeters_path = "WildfirePerimeters1931to2022.shp"
 wildfire_perimeters = gpd.read_file(wildfire_perimeters_path)
-wildfire_perimeters = wildfire_perimeters.to_crs(epsg=4326)
+wildfire_perimeters = wildfire_perimeters.to_crs(epsg=3400)
 in_province_codes = ["B", "PB", "I", "B_NP", "PB_NP", "I_NP"]
 out_of_province_codes = list(
     set(wildfire_perimeters["BURNCODE"].unique()) - set(in_province_codes)
@@ -14,7 +14,7 @@ canada_provincial_perimeters = gpd.read_file(canada_provincial_perimeter_path)
 alberta_perimeter = canada_provincial_perimeters[
     canada_provincial_perimeters["PRNAME"] == "Alberta"
 ]
-alberta_perimeter = alberta_perimeter.to_crs(epsg=4326)
+alberta_perimeter = alberta_perimeter.to_crs(epsg=3400)
 
 wildfire_perimeters["burncode_within_AB"] = wildfire_perimeters["BURNCODE"].isin(
     in_province_codes
