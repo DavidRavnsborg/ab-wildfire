@@ -73,6 +73,7 @@ for i, decade in enumerate(decades):
     ]
     if not data.empty:
         data.plot(ax=ax, color=data["color"])
+ax_list[-1].axis("off")
 
 legend_descriptions = {
     "B": "Burned area (AB)",
