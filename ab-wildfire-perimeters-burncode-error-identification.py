@@ -1,6 +1,7 @@
 import geopandas as gpd
 import pandas as pd
 
+
 wildfire_perimeters_path = "WildfirePerimeters1931to2022.shp"
 wildfire_perimeters = gpd.read_file(wildfire_perimeters_path)
 wildfire_perimeters = wildfire_perimeters.to_crs(epsg=3400)
@@ -15,6 +16,7 @@ alberta_perimeter = canada_provincial_perimeters[
     canada_provincial_perimeters["PRNAME"] == "Alberta"
 ]
 alberta_perimeter = alberta_perimeter.to_crs(epsg=3400)
+
 
 wildfire_perimeters["burncode_within_AB"] = wildfire_perimeters["BURNCODE"].isin(
     in_province_codes
