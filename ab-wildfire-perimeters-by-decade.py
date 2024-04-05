@@ -1,8 +1,8 @@
-import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import numpy as np
+import pandas as pd
 
 wildfire_perimeters_path = "WildfirePerimeters1931to2022.shp"
 wildfire_perimeters = gpd.read_file(wildfire_perimeters_path)
@@ -61,6 +61,7 @@ fig, axes = plt.subplots(
 ax_list = axes.flatten()
 for i, decade in enumerate(decades):
     ax = ax_list[i]
+    ax.axis("off")
     ax.set_xlabel("Longitude", fontsize="small")
     ax.set_ylabel("Latitude", fontsize="small")
     ax.set_title(
@@ -72,8 +73,6 @@ for i, decade in enumerate(decades):
     ]
     if not data.empty:
         data.plot(ax=ax, color=data["color"])
-# Turn off visibility instead of deleting to avoid index errors
-ax_list[-1].axis("off")
 
 legend_descriptions = {
     "B": "Burned area (AB)",
