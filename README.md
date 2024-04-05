@@ -11,6 +11,6 @@ Additionally, 217 wildfire perimeter issues were detected in the categorization 
 - Some portion of these 168 wildfire perimeters that straddle the border may be considered minor overlaps that are insignificant (additional validation is required). 
 - The remaining 49 issues are forest fire perimeters that cleanly fall on the wrong side of the Alberta border, for which they are labeled. These should be validated, but should be more straight-forward to evaluate.
 
-![alt text](ab_wildfires_1931-2019.png)
+![alt text](ab_wildfires_1931-2019_epsg-3400.png)
 
 
