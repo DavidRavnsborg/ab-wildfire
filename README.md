@@ -1,4 +1,6 @@
-# This repo contains maps of AB's recorded wildfires from 1931-2019. It also contains some code for identifying some BURNCODE classification data issues found in the Alberta wildfire perimeters dataset.
+# ab-wildfire
+
+This repo contains maps of AB's recorded wildfires from 1931-2019. It also contains some code for identifying some BURNCODE classification data issues found in the Alberta wildfire perimeters dataset.
 
 - The Alberta wildfire perimeters dataset can be found here: https://www.alberta.ca/wildfire-maps-and-data (Historical Wildfire Perimeter Data: 1931 to 2022)
 - The Canadian provincial shapefiles dataset obtained from the 2016 census, from which the Alberta boundary is extracted, can be found here: https://open.canada.ca/data/en/dataset/a883eb14-0c0e-45c4-b8c4-b54c4a819edb
